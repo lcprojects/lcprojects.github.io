@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 12px;
+    font-family: 'Noto Sans';
+}
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text] {
+    vertical-align: middle;
+    width: 300px;
+    padding: 5px 12px;
+    font-size: 100%;
+    color: #495d63;
+    border: 1px solid #d8e1e3;
+    border-radius: 15px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.button {
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 5px 7px;
+    background-color: #ecf0f1; 
+    border: 1px solid #d8e1e3;
+    border-radius: 30px;
+}
+
+.button:active {
+    background-color: #b0c3c7;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #d8e1e3;
+}
+
+.row {
+    margin-top: 10px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note {
+    width: 300px;
+    position: relative;
+    padding: 4px 10px;
+    font-size: 100%;
+    border-radius: 30px;
+    border: 1px solid #d8e1e3;
+}
+
+.check {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.notexecuted {
+    background-color: #e74c3c;
+}
+
+.wip {
+    background-color: #7f8c8d;
+}
+
+.completed {
+    background-color: #2ecc71;
+}
+
+.delete {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    padding: 4px 7px;
+    background-color: white;
+    border: 1px solid #d8e1e3;
+    border-radius: 16px;
+}
+
+.delete:hover {
+    background-color: #d8e1e3;
+}
+
+.delete:active {
+    outline: none;
+}
+
+.delete i {
+    vertical-align: middle;
+}

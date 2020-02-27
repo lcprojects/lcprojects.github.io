@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple UI</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container container-md">
+
+        <div class="columns">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Avatars
+                    </div>
+                    <div class="card-body">
+                        <div class="avatar avatar-xs">
+                            <img src="img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-sm m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-md m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-lg m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-xl m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Buttons
+                    </div>
+                    <div class="card-body">
+                        <div class="m-b-sm">
+                            <a class="btn">Button</a>
+                            <a class="btn btn-secondary">Button</a>
+                            <a class="btn btn-error">Button</a>
+                            <a class="btn btn-success">Button</a>
+                            <button class="btn" disabled>Button</button>
+                        </div>
+                        <div class="m-b-sm">
+                            <a class="btn">Button</a>
+                            <a class="btn"><div class="avatar"><img src="img/avatar.png"></div>Button</a>
+                            <a class="btn"><div class="avatar"><img src="img/avatar.png"><div class="avatar-state online"></div></div>Button</a>
+                            <a class="btn"><div class="avatar"><img src="img/avatar.png"><div class="avatar-state online"></div></div>&#9660;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Badges
+                    </div>
+                    <div class="card-body">
+                        <a class="btn badge m-r-sm" data-content="3">Button</a>
+                        <a class="btn btn-secondary m-r-sm badge">Button</a>
+                        <a class="btn btn-error badge m-r-sm" data-content="3">Button</a>
+                        <a class="btn btn-success badge m-r-sm">Button</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Tooltips
+                    </div>
+                    <div class="card-body">
+                        <a class="btn m-r-sm tooltip tooltip-top" data-tooltip="Tooltip Text">Button</a>
+                        <a class="btn btn-error m-r-sm tooltip tooltip-bottom" data-tooltip="Tooltip Text">Button</a>
+                        <a class="btn m-r-sm badge tooltip tooltip-left" data-tooltip="Tooltip Text">Button</a>
+                        <a class="btn btn-error badge m-r-sm tooltip tooltip-right" data-tooltip="Tooltip Text">Button</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Form Controls
+                    </div>
+                    <div class="card-body">
+                        <label for="checkbox-1" class="checkbox">
+                            <input type="checkbox" id="checkbox-1">
+                            Checkbox 1
+                        </label>
+                        <label for="checkbox-2" class="checkbox m-t-sm">
+                            <input type="checkbox" id="checkbox-2">
+                            Checkbox 2
+                        </label>
+                        <label for="checkbox-3" class="checkbox m-t-sm">
+                            <input type="checkbox" id="checkbox-3" disabled>
+                            Checkbox Disabled
+                        </label>
+                        <br>
+                        <br>
+                        <label for="radio-1" class="radio">
+                            <input type="radio" id="radio-1" name="radio">
+                            Radio Option
+                        </label>
+                        <label for="radio-2" class="radio">
+                            <input type="radio" id="radio-2" name="radio">
+                            Radio Option
+                        </label>
+                        <label for="radio-3" class="radio" >
+                            <input type="radio" id="radio-3" name="radio" disabled>
+                            Radio Option
+                        </label>
+                        <br>
+                        <label for="switch-1" class="switch">
+                            <input type="checkbox" id="switch-1">
+                        </label>
+                        <br>
+                        <label for="switch-2" class="switch">
+                            <input type="checkbox" id="switch-2">
+                        </label>
+                        <br>
+                        <label for="switch-3" class="switch">
+                            <input type="checkbox" id="switch-3" disabled>
+                        </label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Comments
+                    </div>
+                    <div class="card-body">
+                        <div class="comments">
+                            <div class="comment">
+                              <a href="#" class="avatar avatar-md">
+                                <img src="img/avatar.jpg">
+                              </a>
+                              <div class="comment-content">
+                                <a href="#" class="comment-author">Matt</a>
+                                <span class="comment-date">Today at 5:42PM</span>
+                                <div class="comment-text">
+                                  How artistic! This has been very useful for my research. Thanks as well!
+                                </div>
+                                <div class="comment-actions">
+                                  <a href="#" class="comment-reply">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Forms
+                    </div>
+                    <div class="card-body">
+                        <label class="label-text" for="name">Name</label>
+                        <input type="text" class="text-input m-r-sm" name="name" id="name">
+                        <label class="label-text m-t-sm" for="surname">Surname</label>
+                        <input type="text" class="text-input" name="surname" id="surname">
+                        <label class="label-text m-t-sm" for="error">Error</label>
+                        <input type="text" class="text-input error" name="error" id="error">
+                        <label class="label-text m-t-sm" for="success">Success</label>
+                        <input type="text" class="text-input success" name="success" id="success">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Table
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ABC</td>
+                                    <td>DEF</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>GHI</td>
+                                    <td>JLM</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>NOP</td>
+                                    <td>QRS</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>TUV</td>
+                                    <td>XZ</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>ABC</td>
+                                    <td>DEF</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Typography
+                    </div>
+                    <div class="card-body">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p>Paragraph Lorem, ipsum dolor sit <kbd>Alt + F4</kbd> amet consectetur adipisicing elit. Enim, et quidem! Ratione dolorem amet maiores quia culpa officia aut eos.</p>
+                        <blockquote><p>Blockquote Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ullam.</p><cite>Copernicus</cite></blockquote>
+                        <kbd class="m-b-xs">Ctrl + Alt + Del</kbd>
+                        <br>
+                        <code class="m-b-xs">console.log('Hello World')</code>
+                        <p class="text-left">Left</p>
+                        <p class="text-center">Center</p>
+                        <p class="text-right">Right</p>
+                        <div class="flex-row">
+                            <ul>
+                                <li>List item 1</li>
+                                <li>List item 2</li>
+                                <li>List item 3</li>
+                                <ul>
+                                    <li>Sublist item 1</li>
+                                    <li>Sublist item 2</li>
+                                </ul>
+                                <li>List item 4</li>
+                                <li>List item 5</li>
+                            </ul>
+                            <ul class="lower-roman">
+                                <li>List item 1</li>
+                                <li>List item 2</li>
+                                <li>List item 3</li>
+                                <ul>
+                                    <li>Sublist item 1</li>
+                                    <li>Sublist item 2</li>
+                                </ul>
+                                <li>List item 4</li>
+                                <li>List item 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Avatars with state
+                    </div>
+                    <div class="card-body">
+                        <div class="avatar avatar-xs">
+                            <img src="img/avatar.png" alt="Avatar">
+                            <div class="avatar-state online"></div>
+                        </div>
+                        <div class="avatar avatar-sm m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                            <div class="avatar-state busy"></div>
+                        </div>
+                        <div class="avatar avatar-md m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                            <div class="avatar-state away"></div>
+                        </div>
+                        <div class="avatar avatar-lg m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                            <div class="avatar-state offline"></div>
+                        </div>
+                        <div class="avatar avatar-xl m-t-sm">
+                            <img src="img/avatar.png" alt="Avatar">
+                            <div class="avatar-state online"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Labels
+                    </div>
+                    <div class="card-body">
+                        <div class="label label-primary m-t-sm">primary label</div>
+                        <div class="label label-secondary m-t-sm">secondary label</div>
+                        <br>
+                        <div class="label m-t-sm">default label</div>
+                        <div class="label label-success m-t-sm">success label</div>
+                        <div class="label label-error m-t-sm">error label</div>
+                        <div class="label label-warning m-t-sm">warning label</div>
+                        <br>
+                        <div class="label m-t-sm arrow-left">arrow left</div>
+                        <div class="label m-t-sm arrow-right m-r-sm">arrow right</div>
+                        <div class="label m-t-sm arrow-top">arrow top</div>
+                        <div class="label m-t-sm arrow-bottom">arrow bottom</div>
+                        <br>
+                        <div class="label label-border m-t-sm">default label</div>
+                        <div class="label label-success label-border m-t-sm">success label</div>
+                        <div class="label label-error label-border m-t-sm">error label</div>
+                        <div class="label label-warning label-border m-t-sm">warning label</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Progress
+                    </div>
+                    <div class="card-body">
+                        <div class="progress" data-percentage="45%">
+                            <div class="progress-bar"></div>
+                            <div class="progress-label">45%</div>
+                        </div>
+                        <div class="progress m-t-md" data-percentage="64%">
+                            <div class="progress-bar"></div>
+                            <div class="progress-label">64%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Breadcrumbs
+                    </div>
+                    <div class="card-body">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumb"><a href="#">Home</a></li>
+                            <li class="breadcrumb"><a href="#">Projects</a></li>
+                            <li class="breadcrumb"><a href="#">Simple UI</a></li>
+                            <li class="breadcrumb">Index</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Cards
+                    </div>
+                    <div class="card-body flex-row">
+                        <div class="card card-mini m-r-sm">
+                            <div class="card-header">
+                            </div>
+                            <div class="card-body">
+                                <img src="img/avatar.png" alt="Avatar">
+                                <div class="card-title">Card Title</div>
+                                <div class="card-subtitle">Subtitle</div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quidem.
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn">Add</button>
+                                <button class="btn btn-error">Remove</button>
+                            </div>
+                        </div>
+                        <div class="card card-mini">
+                            <div class="card-header">
+                            </div>
+                            <div class="card-body">
+                                <img src="img/avatar.jpg" alt="Avatar">
+                                <div class="card-title">Card Title</div>
+                                <div class="card-subtitle">Subtitle</div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quidem.
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success">Add</button>
+                                <button class="btn btn-error">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Dropdown
+                    </div>
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">File &#9662;</div>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">New</div>
+                                <div class="dropdown-item">New Window</div>
+                                <div class="dropdown-separator"></div>
+                                <div class="dropdown-item">Open File</div>
+                                <div class="dropdown-item">Open Folder</div>
+                                <div class="dropdown-item">Save</div>
+                                <div class="dropdown-item">Save All</div>
+                                <div class="dropdown-separator"></div>
+                                <div class="dropdown-item">Exit</div>
+                            </div>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="dropdown">
+                            <div class="dropdown-trigger"><a class="btn">Menu &#9660;</a></div>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">New</div>
+                                <div class="dropdown-item">New Window</div>
+                                <div class="dropdown-separator"></div>
+                                <div class="dropdown-item">Open File</div>
+                                <div class="dropdown-item">Open Folder</div>
+                                <div class="dropdown-item">Save</div>
+                                <div class="dropdown-item">Save All</div>
+                                <div class="dropdown-separator"></div>
+                                <div class="dropdown-item">Exit</div>
+                            </div>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <a class="btn">
+                                    <div class="avatar avatar-xs">
+                                        <img src="img/avatar.png">
+                                        <div class="avatar-state online"></div>
+                                    </div>
+                                    &#9660;
+                                </a>
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">Online</div>
+                                <div class="dropdown-item">Busy</div>
+                                <div class="dropdown-item">Away</div>
+                                <div class="dropdown-item">Offline</div>
+                                <div class="dropdown-separator"></div>
+                                <div class="dropdown-item">Sign out</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Message
+                    </div>
+                    <div class="card-body">
+                        <div class="message">This is a message</div>
+                        <div class="message message-success m-t-sm">This is a success message</div>
+                        <div class="message message-error m-t-sm">This is a error message</div>
+                        <div class="message message-warning m-t-sm">This is a warning message</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Grid
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="columns">
+                                <div class="col-6 p-a-xs flex-row bg-gray">col-6</div>
+                                <div class="col-6 p-a-xs flex-row bg-gray">col-6</div>
+                            </div>
+                            <div class="columns">
+                                <div class="col-8 p-a-xs flex-row bg-gray">col-8</div>
+                                <div class="col-4 p-a-xs flex-row bg-gray">col-4</div>
+                            </div>
+                            <div class="columns">
+                                <div class="col-2 p-a-xs flex-row bg-gray">col-2</div>
+                                <div class="col-2 p-a-xs flex-row bg-gray">col-2</div>
+                                <div class="col-2 p-a-xs flex-row bg-gray">col-2</div>
+                                <div class="col-1 p-a-xs flex-row bg-gray">col-1</div>
+                                <div class="col-2 p-a-xs flex-row bg-gray">col-2</div>
+                                <div class="col-3 p-a-xs flex-row bg-gray">col-3</div>
+                            </div>
+                            <div class="columns">
+                                <div class="col-12 p-a-xs flex-row bg-gray">col-12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        Tabs
+                    </div>
+                    <div class="card-body">
+                        <div class="tab">
+                            <div class="tab-h">
+                                <div class="tab-h-item active">Tab 1</div>
+                                <div class="tab-h-item">Tab 2</div>
+                                <div class="tab-h-item">&#9930; Tab 3</div>
+                                <div class="tab-h-item">&#9983; Tab 4</div>
+                            </div>
+                            <div class="tab-b">
+                                <div class="tab-b-item active"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eius architecto animi at ullam corrupti ut facere, error, soluta laboriosam eos iure impedit in provident ducimus nesciunt minus voluptate possimus! Eligendi repellat harum exercitationem deserunt rem excepturi ut cum, ratione voluptatum veniam expedita corrupti, dolorem sequi asperiores enim doloremque assumenda.</p></div>
+                                <div class="tab-b-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, facilis? 2</div>
+                                <div class="tab-b-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, facilis? 3</div>
+                                <div class="tab-b-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, facilis? 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

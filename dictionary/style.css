@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 12px;
+    background-color: #eee;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 440px;
+    min-height: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type=text] {
+    vertical-align: middle;
+    padding: 10px 20px;
+    font-size: 125%;
+    font-weight: 100;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.search {
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 22px;
+    color: #555;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.search:hover {
+    background-color: #f7f7f7;
+}
+
+.search:active {
+    background-color: #eee;
+}
+
+.container figure img {
+    max-width: 400px;
+}
+
+.container figure {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 0%;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.left {
+    border-bottom-right-radius: 5px;
+}
+
+.right {
+    border-bottom-left-radius: 5px;
+    right: 0;
+}
+
+.arrow:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.word {
+    font-size: 187%;
+    font-weight: 700;
+}
+
+.definition {
+    font-size: 100%;
+}
+
+.synonyms-title {
+    font-weight: 700;
+    font-size: 100%;
+    color: #555;
+}
+
+.synonyms {
+    font-size: 100%;
+}
+
+.loader {
+    text-align: center;
+    font-size: 500%;
+    animation: rotate 0.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

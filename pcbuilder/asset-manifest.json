@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.023b9432.chunk.css",
+    "main.js": "/static/js/main.d63eb3c0.chunk.js",
+    "main.js.map": "/static/js/main.d63eb3c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.71ff2808.js",
+    "runtime-main.js.map": "/static/js/runtime-main.71ff2808.js.map",
+    "static/js/2.3b46e46d.chunk.js": "/static/js/2.3b46e46d.chunk.js",
+    "static/js/2.3b46e46d.chunk.js.map": "/static/js/2.3b46e46d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.85375e21eca19f5e4d881a9e12d6e8c8.js": "/precache-manifest.85375e21eca19f5e4d881a9e12d6e8c8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.023b9432.chunk.css.map": "/static/css/main.023b9432.chunk.css.map",
+    "static/js/2.3b46e46d.chunk.js.LICENSE.txt": "/static/js/2.3b46e46d.chunk.js.LICENSE.txt",
+    "static/media/amd-radeon-logo.webp": "/static/media/amd-radeon-logo.6d32efdd.webp",
+    "static/media/corsair-logo.svg": "/static/media/corsair-logo.e777cad2.svg",
+    "static/media/cpu.png": "/static/media/cpu.d579fe9a.png",
+    "static/media/gpu.png": "/static/media/gpu.df408545.png",
+    "static/media/hyperx-logo.jpg": "/static/media/hyperx-logo.6f836b6d.jpg",
+    "static/media/intel-logo.jpg": "/static/media/intel-logo.1a2465e5.jpg",
+    "static/media/keyboard.png": "/static/media/keyboard.a263999d.png",
+    "static/media/motherboard.png": "/static/media/motherboard.9077f8ea.png",
+    "static/media/mouse.png": "/static/media/mouse.08eb82ed.png",
+    "static/media/nvidia-logo.png": "/static/media/nvidia-logo.87cd2638.png",
+    "static/media/power-supply.png": "/static/media/power-supply.154f76e9.png",
+    "static/media/ram.png": "/static/media/ram.678534ba.png",
+    "static/media/storage.png": "/static/media/storage.9b3d1ba2.png",
+    "static/media/viper-logo.png": "/static/media/viper-logo.608c74a9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71ff2808.js",
+    "static/js/2.3b46e46d.chunk.js",
+    "static/css/main.023b9432.chunk.css",
+    "static/js/main.d63eb3c0.chunk.js"
+  ]
+}
