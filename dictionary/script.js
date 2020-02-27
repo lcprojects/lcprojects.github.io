@@ -32,7 +32,7 @@ class Search {
 
     async getDefinition() {
         let data;
-        data = await fetch('http://api.urbandictionary.com/v0/define?term=' + this.query);
+        data = await fetch('https://api.urbandictionary.com/v0/define?term=' + this.query);
         data = await data.json();
         if (data.list.length !== 0) {
             this.definition = data.list[0].definition.replace(/\[/g, '');
