@@ -4,45 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Projects</title>
     <style>
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 12px;
-        }
-        ul {
-            width: 280px;
+        *,
+        *::before,
+        *::after {
+            margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            color: #444;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-family: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-family: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+        }
+
+        ul {
             list-style: none;
+            margin-top: 15px;
+            padding: 0;
+            width: 800px;
         }
+
         li {
-            margin-bottom: 14px;
+            display: block;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 1px 1px 4px 0 #ddd;
+            border-radius: 2px;
         }
+
         a {
             text-decoration: none;
-            color: #555;
-            padding: 4px 8px;
-            border: 1px solid rgb(216, 216, 216);
-            border-radius: 4px;
         }
-        a:hover {
-            color: #222;
-            background-color: #eee;
+
+        .see-more {
+            text-align: center;
+            color: cornflowerblue;
         }
+
+        .see-more:hover {
+            color: rgb(90, 128, 199);
+        }   
+
+        .link {
+            color: cornflowerblue;
+        }
+
+        .link:hover {
+            color: rgb(90, 128, 199);
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logos > *:first-child {
+            white-space: nowrap;
+        }
+
+        .logos > *:not(:first-child) {
+            height: 40px;
+        }
+
+        .logos > *:not(:last-child) {
+            margin-right: 25px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <ul>
-        <li><a href="/simpleui">Simple UI</a></li>
-        <li><a href="/pcbuilder">PC Builder</a></li>
-        <li><a href="/taskManager">Task Manager</a></li>
-        <li><a href="/calculator">Calculator</a></li>
-        <li><a href="/gameOfLife">Game Of Life</a></li>
-        <li><a href="/dictionary">Dictionary (powered by UrbanDictionary)</a></li>
-        <li><a href="/toDoList">TODO List</a></li>
-        <li><a href="/website1">Website 1</a></li>
-        <li><a href="/website2">Website 2 (Responsive)</a></li>
-    </ul>
+    <header>
+        <div class="hero">
+            <h1>Portfolio of LC</h1>
+            <span class="title">Front End Developer</span>
+            <div class="logos">
+                <span>Technologies :</span>
+                <img src="/resourses/img/html5.png" alt="HTML5">
+                <img src="/resourses/img/css3.png" alt="CSS3">
+                <img src="/resourses/img/sass.svg" alt="Sass">
+                <img src="/resourses/img/js.png" alt="Javascript">
+                <img src="/resourses/img/react.svg" alt="React">
+            </div>
+            <a href="#projectslist" class="see-more">
+                List of Projects<br>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h2 id="projectslist">Projects</h2>
+        <ul>
+            <li>
+                <a class="link" href="/simpleui">Simple UI</a>
+                <p>Simple CSS framework developed with Sass and Javascript.</p>
+            </li>
+            <li>
+                <a class="link" href="/pcbuilder">PC Builder</a>
+                <p>A PC Builder developed in React using React Router and Redux.</p>
+            </li>
+            <li>
+                <a class="link" href="/taskManager">Task Manager</a>
+                <p>A MVC app developed in Javascript and CSS.</p>
+            </li>
+            <li>
+                <a class="link" href="/calculator">Calculator</a>
+                <p>A React app.</p>
+            </li>
+            <li>
+                <a class="link" href="/gameOfLife">Game Of Life</a>
+                <p>The implementation of the game of life in Javascript.</p>
+            </li>
+            <li>
+                <a class="link" href="/dictionary">Dictionary</a>
+                <p>A visual dictionary developed in Javascript using the UrbanDictionary API and Pixabay API.</p>
+            </li>
+            <li>
+                <a class="link" href="/toDoList">TODO List</a>
+                <p>A project developed in Javascript</p>
+            </li>
+            <li>
+                <a class="link" href="/website1">Website 1</a>
+                <p>A simple website in HTML and CSS.</p>
+            </li>
+            <li>
+                <a class="link" href="/website2">Website 2</a>
+                <p>A responsive website.</p>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
