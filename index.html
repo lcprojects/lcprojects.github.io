@@ -34,12 +34,15 @@
         ul {
             list-style: none;
             margin-top: 15px;
+            margin-bottom: 50px;
             padding: 0;
             width: 800px;
         }
 
         li {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
             margin-bottom: 10px;
             box-shadow: 1px 1px 4px 0 #ddd;
@@ -110,6 +113,14 @@
             align-items: center;
         }
 
+        .btn {
+            display: inline-block;
+            padding: 4px 8px;
+            color: white;
+            background-color: cornflowerblue;
+            border-radius: 4px;
+        }
+
     </style>
 </head>
 <body>
@@ -135,40 +146,94 @@
         <h2 id="projectslist">Projects</h2>
         <ul>
             <li>
-                <a class="link" href="/simpleui">Simple UI</a>
-                <p>Simple CSS framework developed with Sass and Javascript.</p>
+                <div>
+                    <a class="link" href="/simpleui">Simple UI</a>
+                    <p>Simple CSS framework developed with Sass and Javascript.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/simpleui" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/simpleui" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/pcbuilder">PC Builder</a>
-                <p>A PC Builder developed in React using React Router and Redux.</p>
+                <div>
+                    <a class="link" href="/pcbuilder">PC Builder</a>
+                    <p>A PC Builder developed in React using React Router and Redux.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/pcbuilder" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/pcbuilder" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/taskManager">Task Manager</a>
-                <p>A MVC app developed in Javascript and CSS.</p>
+                <div>
+                    <a class="link" href="/taskManager">Task Manager</a>
+                    <p>A MVC app developed in Javascript and CSS.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/taskManager" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/taskManager" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/calculator">Calculator</a>
-                <p>A React app.</p>
+                <div>
+                    <a class="link" href="/calculator">Calculator</a>
+                    <p>A React app.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/calculator" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/calculator" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/gameOfLife">Game Of Life</a>
-                <p>The implementation of the game of life in Javascript.</p>
+                <div>
+                    <a class="link" href="/gameOfLife">Game Of Life</a>
+                    <p>The implementation of the game of life in Javascript.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/gameOfLife" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/gameOfLife" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/dictionary">Dictionary</a>
-                <p>A visual dictionary developed in Javascript using the UrbanDictionary API and Pixabay API.</p>
+                <div>
+                    <a class="link" href="/dictionary">Dictionary</a>
+                    <p>A visual dictionary developed in Javascript using the UrbanDictionary API and Pixabay API.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/dictionary" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/dictionary" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/toDoList">TODO List</a>
-                <p>A project developed in Javascript</p>
+                <div>
+                    <a class="link" href="/toDoList">TODO List</a>
+                    <p>A project developed in Javascript</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/toDoList" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/toDoList" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/website1">Website 1</a>
-                <p>A simple website in HTML and CSS.</p>
+                <div>
+                    <a class="link" href="/website1">Website 1</a>
+                    <p>A simple website in HTML and CSS.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/website1" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/website1" class="btn">Demo</a>
+                </div>
             </li>
             <li>
-                <a class="link" href="/website2">Website 2</a>
-                <p>A responsive website.</p>
+                <div>
+                    <a class="link" href="/website2">Website 2</a>
+                    <p>A responsive website.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/lcprojects/website2" class="btn">Source Code</a>
+                    <a href="https://lcprojects.github.io/website2" class="btn">Demo</a>
+                </div>
             </li>
         </ul>
     </main>
