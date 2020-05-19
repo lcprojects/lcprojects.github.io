@@ -1,0 +1,542 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Ubuntu';
+}
+
+.header {
+    width: 100vw;
+    height: 125vh;
+    background-image: url('../img/monastery-tibet-flipped.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.overlay {
+    background-color: #00000099;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 3rem;
+    max-width: 100rem;
+    height: 100%;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.app-name {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lobster';
+    text-transform: capitalize;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links {
+    margin-right: 4rem;
+    font-size: 1.9rem;
+    font-family: 'Ubuntu';
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: rgb(224, 113, 8);
+}
+
+.hero-box {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+.hero-text {
+    color: white;
+    font-size: 6rem;
+    font-family: 'Lobster';
+    text-transform: capitalize;
+}
+
+.hero-subtext {
+    margin-top: 2rem;
+    line-height: 1.75;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu';
+}
+
+.planner {
+    margin-bottom: 5rem;
+}
+
+.tabs-header {
+    display: flex;
+    align-items: center;
+}
+
+.tabs-header-item {
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1.9rem;
+    font-family: 'Ubuntu';
+    background-color: rgba(255, 255, 255, 0.479);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.tabs-header-item:hover {
+    color: rgb(224, 113, 8);
+    background-color: white;
+}
+
+.active {
+    color: rgb(224, 113, 8);
+    background-color: white;
+}
+
+.tabs-body-item {
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.cols {
+    display: flex;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+.col-1-4:not(:last-child) {
+    margin-right: 5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    color: rgb(224, 113, 8);
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+}
+
+select {
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 10px;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu';
+    background-color: rgb(224, 113, 8);
+    border: none;
+    border-radius: 25px;
+}
+
+.destinations {
+    overflow: hidden;
+    padding: 12rem 0 6rem 0;
+}
+
+.destinations-container {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.title {
+    margin-bottom: 3rem;
+    position: relative;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #895428;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    height: 3px;
+    width: 15%;
+    background-color: #895428;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.title-center::before {
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8%;
+}
+
+.subtitle {
+    margin-bottom: 4rem;
+    color: #555;
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.subtitle-center {
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider-item {
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 3rem;
+    width: 30rem;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.name {
+    padding: 0.8rem;
+    position: absolute;
+    bottom: 5.9rem;
+    left: 2rem;
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: 800;
+    font-size: 1.8rem;
+    background-color: #000000AA;
+}
+
+.location {
+    padding: 0.8rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2rem;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 1.6rem;
+    background-color: #000000AA;
+}
+
+.special-offers-container {
+    margin: 0 auto;
+    max-width: 115rem;
+}
+
+.cards-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    padding-bottom: 1.5rem;
+    width: 30rem;
+    background-color: #fff7f0;
+    border-radius: 2rem;
+}
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.card-title {
+    margin: 1rem 0 1rem 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.card-footer {
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.price {
+    margin-right: auto;
+    color: rgb(224, 113, 8);
+    font-size: 2.5rem;
+}
+
+.card-arrow {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: rgb(224, 113, 8);
+    border: 1px solid rgb(224, 113, 8);
+    border-radius: 50%;
+}
+
+.card-arrow:hover {
+    color: white;
+    background-color: rgb(224, 113, 8);
+}
+
+.our-blogs-container {
+    margin: 0 auto;
+    padding: 8rem 0;
+    max-width: 100rem;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.article-image {
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.article-title {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.article-text {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color: #555;
+}
+
+.read-more {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: rgb(224, 113, 8);
+}
+
+.articles {
+    display: flex;
+}
+
+.articles > *:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.article-short {
+    display: flex;
+    align-items: center;
+}
+
+.article-short:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.article-summary {
+    margin-left: 2rem;
+}
+
+.article-short-image {
+    border-radius: 2rem;
+}
+
+.destination-gallery-container {
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    max-width: 100rem;
+}
+
+.destination-gallery-container > img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-box:first-child::after {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.image-box:last-child::after {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.image-box:first-child > img {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.image-box:last-child > img {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.gallery-image {
+    position: relative;
+}
+
+.newsletter-container {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.newsletter-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8rem;
+    margin-bottom: -7rem;
+    box-shadow: 0 0 3px 0px #ccc;
+    border-radius: 2rem;
+    z-index: 9999;
+    background-color: white;
+}
+
+.newsletter-name {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #895428;
+}
+
+.email-label {
+    color: #895428;
+    font-size: 1.6rem;
+}
+
+.email-input {
+    outline: none;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: black;
+    background-color: #ffeee0;
+    border: none;
+    border-radius: 3rem;
+}
+
+footer {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    background-color: #371e09;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.col-1-5:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    font-size: 3.5em;
+    color: white;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.links-title {
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.list-link {
+    display: inline-block   ;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.payment-methods-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-method {
+    margin-bottom: 0.5rem;
+    width: 6rem;
+}
+
+.payment-method:not(:last-child) {
+    margin-right: 0.5rem;
+}
