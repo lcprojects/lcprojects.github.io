@@ -947,8 +947,7 @@ a {
     display: block;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    animation: fadeIn 0.8s ease-out; }
+    border-bottom-left-radius: 4px; }
 
 table {
   overflow: hidden;
